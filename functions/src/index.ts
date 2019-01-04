@@ -12,7 +12,7 @@ import { jwtKey } from './config/secretKeys';
 const app = express();
 
 // Middleware
-app.use(cors({ origin: ['http://localhost:3000', 'https://dayly-test.firebaseapp.com'] }));
+app.use(cors({ origin: ['http://localhost:3000', 'https://dayly-test.firebaseapp.com', 'https://dayly.xyz'] }));
 app.use(jwt({ secret: jwtKey }).unless({ path: ['/_health', '/login'] }));
 
 // Routes
