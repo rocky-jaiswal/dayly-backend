@@ -7,7 +7,7 @@ import { healthCheck } from './handlers/health';
 import { login } from './handlers/login';
 import { getAllUsers } from './handlers/users';
 import { getLogEntry, createLogEntry } from './handlers/logEntries';
-import jwtKey from './config/jwtKey';
+import { jwtKey } from './config/secretKeys';
 
 const app = express();
 

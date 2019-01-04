@@ -1,6 +1,6 @@
 import * as jwt from 'jsonwebtoken';
 
-import jwtKey from '../config/jwtKey';
+import { jwtKey } from '../config/secretKeys';
 import { findOrCreateUserById } from '../models/user';
 
 export const login = async (req, res) => {
